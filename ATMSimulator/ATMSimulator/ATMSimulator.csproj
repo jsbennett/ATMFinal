@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D18E4E8E-E96F-4D3F-B38E-C7FC56781F53}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ATMSimulator</RootNamespace>
+    <AssemblyName>ATMSimulator</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="atmUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="atmUI.Designer.cs">
+      <DependentUpon>atmUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainMenu.Designer.cs">
+      <DependentUpon>mainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt.Designer.cs">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="atmUI.resx">
+      <DependentUpon>atmUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainMenu.resx">
+      <DependentUpon>mainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raingingMoney.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainingMoney2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainingMoney3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreditCard1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreditCard11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreditCard2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreditCard3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButton2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButton3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButton4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButton5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButton6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButton7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButton8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButton9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButtonCancel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButtonClear.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButtonEnter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButtons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_2759.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_2759.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreditCard1Blocked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreditCard2Blocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreditCard3Blocked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmButton0.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
